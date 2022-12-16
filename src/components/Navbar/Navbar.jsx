@@ -2,11 +2,13 @@ import React from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { images } from "../../constants";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+// import { client } from "../../client";
 
 import "./Navbar.scss";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+
   // console.log(toggle);
   return (
     <nav className="app__navbar">
@@ -20,11 +22,7 @@ const Navbar = () => {
         ))}
         <li className="app__flex p-text resume">
           <div></div>
-          <a
-            href={
-              "https://drive.google.com/file/d/1igQsDBLVDK6lZONHRbjOJca92CpaIhsq/view?usp=sharing"
-            }
-          >
+          <a href="https://drive.google.com/file/d/1igQsDBLVDK6lZONHRbjOJca92CpaIhsq/view">
             Resume
           </a>
         </li>
@@ -50,13 +48,9 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <li >
+              <li>
                 <span className="dot"></span>
-                <a
-                  href={
-                    "https://drive.google.com/file/d/1igQsDBLVDK6lZONHRbjOJca92CpaIhsq/view?usp=sharing"
-                  }
-                >
+                <a href="https://drive.google.com/file/d/1igQsDBLVDK6lZONHRbjOJca92CpaIhsq/view">
                   Resume
                 </a>
               </li>
